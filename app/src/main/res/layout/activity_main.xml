@@ -6,13 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <ru.eugeneprojects.clockview.AnalogClockView
+        android:id="@+id/clockView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:centerCircleColor="#EFB786"
+        app:centerCircleRadius="5dp"
+        app:clockCircleColor="#180C0C"
+        app:hourlyHandColor="#ED413E"
+        app:hourlyMarksColor="#ED413E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:minuteCircleColor="#ED413E"
+        app:minuteHandColor="#ED413E"
+        app:minuteMarksColor="#ED413E"
+        app:secondsHandColor="#EFB786"
+        app:showHourlyMarks="true"
+        app:showMinuteMarks="true"
+        app:showSecondsHand="true" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
